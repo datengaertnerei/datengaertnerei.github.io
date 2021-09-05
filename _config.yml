@@ -1,5 +1,5 @@
-#theme: jekyll-theme-slate
-remote-theme: Sylhare/Type-on-Strap
+theme: jekyll-theme-slate
+#remote-theme: Sylhare/Type-on-Strap
 
 title: Datengärtnerei                 # Name of website
 #avatar: assets/img/triangle.png      # Path of avatar image, to be displayed in the theme's header
