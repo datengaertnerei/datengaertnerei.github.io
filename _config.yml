@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+locale: "de"
 title: Datengärtnerei QA Pages
 email: jensd@datengaertnerei.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -21,7 +22,6 @@ twitter_username: datengaertner
 github_username: datengaertnerei
 minimal_mistakes_skin: default
 search: true
-locale: "de"
 
 # Build settings
 markdown: kramdown
