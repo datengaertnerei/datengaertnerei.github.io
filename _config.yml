@@ -69,8 +69,11 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/datengaertnerei"
+    - label: "Stackoverflow"
+      icon: "fab fa-stack-overflow"
+      url: "https://stackoverflow.com/users/story/10937788"
     - label: "Xing"
-      icon: "fa fa-xing"
+      icon: "fab fa-xing"
       url: "https://www.xing.com/profile/Jens_Dibbern/portfolio"
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
@@ -78,18 +81,6 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Xing"
-      icon: "fa fa-xing"
-      url: "https://www.xing.com/profile/Jens_Dibbern/portfolio"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin-in"
-      url: "https://www.linkedin.com/in/jensdibbern"
 
 defaults:
   # _posts
