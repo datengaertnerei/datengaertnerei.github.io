@@ -47,3 +47,4 @@ Mein Foliensatz findet ihr hier: [Präsentation QA in CI/CD Pipelines (PDF)](/as
 # Tipp aus dem Publikum
 
 [CodeScene](https://codescene.io/) - Ein neuer Ansatz zur statischen Analyse, der das Verhalten des Team einbezieht
+
