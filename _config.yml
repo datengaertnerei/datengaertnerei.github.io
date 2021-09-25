@@ -58,10 +58,13 @@ plugins:
 author:
   name   : "Jens Dibbern"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Informatiker, Software Entwickler, Tester schon ein halbes Leben lang."
+  bio    : "Informatiker, Software Entwickler, Tester schon ein halbes Leben lang. Team Lead bei elbformat."
   links:
+    - label: "elbformat"
+      icon: "fas fa-briefcase"
+      url: "https://elbform.at/"
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-home"
       url: "https://www.datengaertnerei.com/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
