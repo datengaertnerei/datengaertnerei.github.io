@@ -21,6 +21,7 @@ twitter_username: datengaertner
 github_username: datengaertnerei
 minimal_mistakes_skin: default
 search: true
+locale: "de"
 
 # Build settings
 markdown: kramdown
