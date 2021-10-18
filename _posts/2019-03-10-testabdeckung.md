@@ -19,7 +19,8 @@ Wir nehmen ein Beispiel: Eine triviale Funktion zur Ermittlung eines Eintrittspr
 + Ab 65 Jahren gibt es 10 EUR ermäßigten Preis für Rentner.
 
 Die folgende Implementierung enthält fachliche (und stilistische) Fehler:
-{{< highlight java >}}
+
+~~~ java
 public class PriceCalculator {
   public double getPrice(int age) {
     double result = 0.0D;
@@ -38,12 +39,13 @@ public class PriceCalculator {
     return result;
   }
 }
-{{< /highlight >}}
+~~~ 
 
 Der Unit Test mit JUnit läuft aber, ohne die Fehler zu identifizieren. Und er erreicht 100% Testabdeckung. 
 Gäste im Alter von 27 oder 65 Jahren haben in der Praxis dann Glück gehabt.
 Dieser Test prüft also zum einen nicht die wichtigen Grenzfälle. Er berücksichtigt zum anderen nicht die Verwendung von Äquivalenzklassen. Das Vorgehen ähnelt eher einem Schuss mit einer Schrotladung.
-{{< highlight java >}}
+
+~~~ java
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -71,11 +73,12 @@ class PriceCalculatorTest {
     assertEquals(10.0D, classUnderTest.getPrice(90), 0.01D);
   }
 }
-{{< /highlight >}}
+~~~ 
 
 Zuerst bringen wir daher den Test in Ordnung. Die neun gleichförmigen Methodenaufrufe reduzieren wir auf einen Aufruf mit Parametern.
 JUnit hat dafür entsprechende Annotationen (hier mit JUnit 5). Die Prüfungen beziehen sich dabei jeweils auf die Altersgrenzen der Preisspannen. Weitere Tests innerhalb dieser Grenzen bringen keinen zusätzlichen Erkenntnisgewinn und sind daher nutzlos.
-{{< highlight java >}}
+
+~~~ java
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -98,7 +101,7 @@ class PriceCalculatorTest {
     assertEquals(expected, classUnderTest.getPrice(age), 0.01D);
   }
 }
-{{< /highlight >}}
+~~~ 
 
 Da der Test jetzt natürlich Fehler identifiziert, müssen wir nun endlich die Methode zur Preisermittlung korrigieren.
 Bei der Gelegenheit ergänzen wir eine Prüfung auf ungültige Altersangaben (Alter kleiner Null). In der Praxis sollten sie natürlich keine RuntimeException direkt in dieser Form werfen.
@@ -122,7 +125,8 @@ public class PriceCalculator {
 ~~~
 
 Mit einer kleinen Ergänzung des Tests erreichen wir erneut 100% Testabdeckung.
-{{< highlight java >}}
+
+~~~ java
 import static org.junit.jupiter.api.Assertions.assertThrows;
 //...
   @Test
@@ -133,7 +137,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
           classUnderTest.getPrice(-1);
         });
   }
-{{< /highlight >}}
+~~~ 
 
 Die Messung mit [JaCoCo](https://www.jacoco.org/) bestätigt das.
 Aber wir sehen hier eben einen strukturbasierten Test, der keine echte Aussagekraft zur korrekten Umsetzung der Anforderung besitzt.

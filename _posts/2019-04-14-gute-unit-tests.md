@@ -10,8 +10,8 @@ tags:
 Der Begriff Unit Test wird hier als Synonym für einen automatisierten Komponententest verwendet mit folgendem Grundaufbau:
 
 1. Initialisieren des Ausgangszustands
-+ Ausführung der zu testenden Operation
-+ Abgleich des Ist-Ergebnis mit einem aus der Spezifikation abgeleiteten Sollwert
+2. Ausführung der zu testenden Operation
+3. Abgleich des Ist-Ergebnis mit einem aus der Spezifikation abgeleiteten Sollwert
 
 Das Ziel dabei ist die Identifikation von Veränderungen im Verhalten des zu testenden Moduls durch einen regelmäßig ausgeführten Regressionstest. Veränderungen der Software bei gleichbleibender Erwartung an das Ergebnis kommen dabei in der Praxis oft vor, z.B. durch interne Optimierungen des Moduls oder Aktualisierung genutzter Bibliotheken. 
 
@@ -27,18 +27,18 @@ Dabei helfen Äquivalenzklassenbildung und Grenzwertanalyse zur Ermittlung optim
 
 Am Beispiel von JUnit 5 zeigen wir, wie Parameter und Erwartungswerte in einem Unit Test ausgelagert werden.
 
-{{< highlight java >}}
+~~~ java
   @ParameterizedTest
   @CsvFileSource(resources = "testGetPrice.csv", numLinesToSkip = 1)
   void testGetPrice(double expected, int age) {
     assertEquals(expected, classUnderTest.getPrice(age), 0.01D);
   }
-{{< /highlight >}}
+~~~ 
 
 Bei der Ausführung wird die folgende CSV Datei eingelesen und für jede Zeile nach der Kopfzeile einmal der Test ausgeführt. 
 Die Werte jeder Zeile dienen in der Reihenfolge von Links nach Rechts als Parameter für die Methode. Dabei müssen die Datentypen zusammenpassen.
 
-{{< highlight csv >}}
+~~~ csv
 expected,age
 0.0,13 
 5.0,14 
@@ -46,7 +46,7 @@ expected,age
 15.0,27 
 15.0,64 
 10.0,65
-{{< /highlight >}}
+~~~ 
 
 Diese Datei kann nicht nur der Entwickler selbst sondern auch der fachliche Experte mit einer Tabellenkalkulation erstellen.
 Das Verfahren eignet sich auch für die Umsetzung eines Entscheidungstabellentests.
