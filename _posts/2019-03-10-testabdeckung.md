@@ -102,7 +102,8 @@ class PriceCalculatorTest {
 
 Da der Test jetzt natürlich Fehler identifiziert, müssen wir nun endlich die Methode zur Preisermittlung korrigieren.
 Bei der Gelegenheit ergänzen wir eine Prüfung auf ungültige Altersangaben (Alter kleiner Null). In der Praxis sollten sie natürlich keine RuntimeException direkt in dieser Form werfen.
-{{< highlight java >}}
+
+~~~ java
 public class PriceCalculator {
   public double getPrice(int age) {
     if (age < 0) {
@@ -118,7 +119,7 @@ public class PriceCalculator {
     }
   }
 }
-{{< /highlight >}}
+~~~
 
 Mit einer kleinen Ergänzung des Tests erreichen wir erneut 100% Testabdeckung.
 {{< highlight java >}}
@@ -136,7 +137,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 Die Messung mit [JaCoCo](https://www.jacoco.org/) bestätigt das.
 Aber wir sehen hier eben einen strukturbasierten Test, der keine echte Aussagekraft zur korrekten Umsetzung der Anforderung besitzt.
-![100% Code Coverage](/images/DemoCodeCoverage.png)
+![100% Code Coverage](/assets/images/DemoCodeCoverage.png)
 
 Das muss jeder verstanden haben, der Kennzahlen auf Basis von Messungen der Testabdeckung im Test setzt.
 Ich kann sogar die falschen Anreize setzen durch harte Vorgaben von Prozentwerten.
