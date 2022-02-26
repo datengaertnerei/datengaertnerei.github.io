@@ -15,7 +15,7 @@ Wir wundern uns also nicht über die Schwachstellen. Wir sind vielmehr froh, das
 Die Liste zeigt aber auch, dass ohne regelmäßige Wartung meiner eigenen Software bzgl. ihrer Abhängigkeiten die Wahrscheinlichkeit für die Anfälligkeit gegenüber bekannten (!) Schwachstellen stetig wächst.
 Dabei sind die Projekte bewusst für vier verbreitete Programmiersprachen gewählt.
 
-# Node (JavaScript)
+# Node.js (JavaScript)
 [CVE-2017-15896](https://nvd.nist.gov/vuln/detail/CVE-2017-15896)
 
 [CVE-2018-7160](https://nvd.nist.gov/vuln/detail/CVE-2018-7160)
@@ -58,3 +58,5 @@ Dabei sind die Projekte bewusst für vier verbreitete Programmiersprachen gewäh
 [CVE-2020-7471](https://nvd.nist.gov/vuln/detail/CVE-2020-7471)
 
 [CVE-2021-35042](https://nvd.nist.gov/vuln/detail/CVE-2021-35042)
+
+Da Node.js eine Zwischenrolle als JavaScript Laufzeitumgebung inkl. Framework einnimmt, habe ich auch PHP, Python und das Java Development Kit jeweils mit mindestens einem relevanten Eintrag in der Datenbank gefunden.
