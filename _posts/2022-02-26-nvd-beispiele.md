@@ -8,8 +8,10 @@ tags:
 ---
 Ich habe für vier große Open Source Projekte exemplarisch für die Jahre 2017 bis 2021 ernstzunehmende Schwachstellen herausgesucht.
 Diese Projekte sind sehr weit verbreitet und haben ein professionelles Management.
+
 Aber sie sind auch komplex und haben selbst Abhängigkeiten. 
 Wir wundern uns also nicht über die Schwachstellen. Wir sind vielmehr froh, dass sie gefunden und behoben sind.
+
 Die Liste zeigt aber auch, dass ohne regelmäßige Wartung meiner eigenen Software bzgl. ihrer Abhängigkeiten die Wahrscheinlichkeit für die Anfälligkeit gegenüber bekannten (!) Schwachstellen stetig wächst.
 Dabei sind die Projekte bewusst für vier verbreitete Programmiersprachen gewählt.
 
