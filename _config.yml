@@ -59,11 +59,11 @@ plugins:
 author:
   name   : "Jens Dibbern"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Informatiker, Software Entwickler, Tester schon ein halbes Leben lang. Team Lead bei elbformat."
+  bio    : "Informatiker, Software Entwickler, Tester schon ein halbes Leben lang. Software Quality Engineering bei Jungheinrich."
   links:
-    - label: "elbformat"
+    - label: "Jungheinrich AG"
       icon: "fas fa-briefcase"
-      url: "https://elbformat.de/"
+      url: "https://www.jungheinrich.de/"
     - label: "Website"
       icon: "fas fa-home"
       url: "https://www.datengaertnerei.com/"
