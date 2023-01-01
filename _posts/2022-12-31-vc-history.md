@@ -1,6 +1,6 @@
 ---
 title: "3 große Ereignisse in der Geschichte der Versionsverwaltung"
-excerpt_separator: "Versionsverwaltungssysteme sind heute integraler Bestandteil der Softwareentwicklung. Durch sie werden Änderungen nachvollziehbar. Source Code lässt sich konkreten Versionen zuordnen. Das macht sie auch zu einem wichtigen Element des Testprozesses."
+excerpt_separator: "<!--more-->"
 categories:
   - DevOps
 tags:
