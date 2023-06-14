@@ -11,6 +11,10 @@ Ich schreibe hier auf Deutsch. Zum einen treffe ich nach wie vor regelmäßig Me
 
 [Ben Dowen - The Full Snack Tester](https://www.dowen.me.uk/)
 
+[Elizabeth Zagroba: Organizational Anarchist](https://elizabethzagroba.com/)
+
+[Lisa Crispin - Agile Testing Blog](https://lisacrispin.com/agile-testing-blog/)
+
 [Lisi Hocke - A Tester's Journey](https://www.lisihocke.com/)
 
 [Maaret Pyhäjärvi - A Seasoned Tester's Crystal Ball](https://visible-quality.blogspot.com/)
