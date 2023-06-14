@@ -80,7 +80,7 @@ author:
       icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/jensdibbern"
     - label: "List of QA tools"
-      icon: "fa-solid fa-screwdriver-wrench"
+      icon: "far fa-tools"
       url: "https://raindrop.io/jens-dibbern/software-qa-tools-17390996"
 
 footer:
